@@ -28,3 +28,6 @@ pipenv run python manage.py makemigrations
 
 **Actualizar medida**
 ![image](https://user-images.githubusercontent.com/54651477/153723934-1e2e09f3-f3bb-48a2-b787-12df4a0e08ad.png)
+
+**Elimina un measurement dado un id**
+![image](https://user-images.githubusercontent.com/54651477/153725264-84a38565-a68d-41e3-88ff-56452f30f808.png)
