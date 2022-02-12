@@ -19,4 +19,6 @@ Example:
 pipenv run python manage.py makemigrations 
 ```
 
+
+**Obtener todos los measurements**
 [image](https://user-images.githubusercontent.com/54651477/153722183-51b60eaa-0789-4a7c-a5db-3c9577d4432b.png)
