@@ -21,4 +21,4 @@ pipenv run python manage.py makemigrations
 
 
 **Obtener todos los measurements**
-[image](https://user-images.githubusercontent.com/54651477/153722183-51b60eaa-0789-4a7c-a5db-3c9577d4432b.png)
+![obtener todos](https://user-images.githubusercontent.com/54651477/153722274-bb1b674f-6731-42d4-8314-2888887865df.png)
