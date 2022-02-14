@@ -1,0 +1,130 @@
+{
+	"info": {
+		"_postman_id": "6456c3aa-888a-411a-b2b4-b4e06212d305",
+		"name": "Measurements",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Crear Measurement",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"variable\": \"3\",\r\n    \"value\": 40,\r\n    \"unit\": \"°C\",\r\n    \"place\": \"Medellin\"\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{host}}:{{port}}{{api_path}}/measurements/"
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener todos los measurements",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{host}}:{{port}}{{api_path}}/measurements"
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener un Measurement",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}:{{port}}{{api_path}}/measurements?id=2",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}{{api_path}}",
+					"path": [
+						"measurements"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Measurement",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"value\":40\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{host}}:{{port}}{{api_path}}/measurements/10"
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Measurement",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{host}}:{{port}}{{api_path}}/measurements/11"
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://127.0.0.1"
+		},
+		{
+			"key": "port",
+			"value": "8000"
+		},
+		{
+			"key": "api_path",
+			"value": ""
+		}
+	]
+}
